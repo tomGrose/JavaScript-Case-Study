@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Art of Woodworking</title>
+  <meta name="description" content="Woodworking Information">
+  <meta name="author" content="Thomas Rosenbaugh">
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript" src="modernizr.custom.05819.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<!-- Add main title as well as site logo -->
+		<div id="headerTitle" class="halfColumn"><h1 id="title">The Art of Woodworking</h1></div>
+		<div id="headerLogo" class="halfColumn"><img id="treesLogo" src="assets/trees.png" alt="Tree logo"></div>
+	</header>
+	<nav>
+		<ul id="navList">
+			<li> <a class="navLinks" href="index.html">Home</a> </li>
+			<li> <a class="navLinks" href="tools.html">Wood Cost Calculator</a> </li>
+		</ul>
+	</nav>
+	<!-- create a div to fill the whole page with a background -->
+	<div id="outerWrapper">
+		<!-- create a div to hold all content -->
+		<div id="innerWrapper">
+			<article>
+				<h1>A little about internet security.</h1>
+				<h2><a href="http://www.tabush.com/blog/safe-internet-browsing-best-practices">Phishing Avoidance</a></h2>
+				<p>Any sort of link that takes you to a site that wants you to provide personal information is most likely unsafe. Stay within sites that require you to give personel info.</p>
+				<h2><a href="http://time.com/money/4935799/online-privacy-security/">Review Sites Security Settings</a></h2>
+				<p>Review social media websites privacy settings. Make sure they are set to keep your information safe</p>
+				<h2><a href=https://lifehacker.com/5940565/why-you-should-start-using-a-vpn-and-how-to-choose-the-best-one-for-your-needs>Use a VPN</a></h2>
+				<p>Using a VPN secures all the data you send and recieve by encrypting it, this way no one can steal your information.</p>
+			</article>
+			<article id="webInfo">
+				<h3 id="info1"></h3>
+				<h3 id="info2"></h3>
+				<h3 id="info3"></h3>
+				<h3 id="info4"></h3>
+				<h3 id="info5"></h3>
+				<h3 id="info6"></h3>
+			</article>
+		</div>
+
+		
+
+	</div>
+	<script>
+		document.getElementById("info1").innerHTML = "Web Browser name: " + navigator.appName;
+		document.getElementById("info2").innerHTML = "Web Browser version: " + navigator.appVersion;
+		document.getElementById("info3").innerHTML = "Operating platform: " + navigator.platform;
+		document.getElementById("info4").innerHTML = "User agent: " + navigator.userAgent;
+		document.getElementById("info5").innerHTML = "Your Screen Width: " + screen.width;
+		document.getElementById("info6").innerHTML = "Your Screen Height: " + screen.height;
+	</script>
+</body>
+</html>

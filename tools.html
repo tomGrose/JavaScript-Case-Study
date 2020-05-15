@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Art of Woodworking</title>
+  <meta name="description" content="Woodworking Information">
+  <meta name="author" content="Thomas Rosenbaugh">
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript" src="modernizr.custom.05819.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<!-- Add main title as well as site logo -->
+		<div id="headerTitle" class="halfColumn"><h1 id="title">The Art of Woodworking</h1></div>
+		<div id="headerLogo" class="halfColumn"><img id="treesLogo" src="assets/trees.png" alt="Tree logo"></div>
+	</header>
+	<nav>
+		<ul id="navList">
+			<li> <a class="navLinks" href="index.html">Home</a> </li>
+			<li> <a class="navLinks" href="history.html">woodworking History</a> </li>
+			<li> <a class="navLinks" href="tools.html">Common Tools</a> </li>
+			<li> <a class="navLinks" href="gallery.html">Woodworking Gallery</a> </li>
+		</ul>
+	</nav>
+	<!-- create a div to fill the whole page with a background -->
+	<div id="outerWrapper">
+		<!-- create a div to hold all content -->
+		<div id="innerWrapper">
+			<article id="boardFoot">
+				<h2>Woodworking and Math</h2>
+				<p>
+					One of the greatest tools in woodworking is math. You may be able to cut straight lines, and come up with beautiful furniture design, but if you can't calculate the correct amount of wood you will need or the correct angles those skills are useless.
+				</p>
+				<p>
+					So the first step in woodworking is to find the amount of wood you need in board feet. Almost every seller of wood charges by the board foot. A board foot is a piece of wood 12 inches wide by 12 inches high and a thickness of 1 inch. Multiplying 12 times 12 times 1 gives us 144. So to find the board foot of a pice of wood you would multiple the height times the width and thickness. Here is a calculator to demonstrate
+				</p>
+			
+			<div id="boardFootCalc">
+				<!-- create a form for input for the form calculator -->
+				<form>
+					Width:<br>
+					<input type="text" name="width" id="widthInput"> <br>
+					Height:<br>
+					<input type="text" name="height" id="heightInput"><br>
+					Thickness:<br>
+					<input type="text" name="thickness" id="thicknessInput"> <br>
+					<input type="button" value="Submit" name="submit" id="submitButton" class="submitButtons">
+				</form>
+				<h3 id="totalBoardFeet"></h3>
+			</div>
+			<div id="woodTypeCost">
+				<p>
+					Once you have found your board feet you need to choose your wood. There are hundreds of different woods in the world, all unique to work with in their own way. Some are also more rare than others. The beautiful African blackwood is going to cost much more than a local walnut or pine. So we will take the average price of the woods that are most commonly used and multiply it by our board feet to see the estimate of what our project will cost. Make sure you have filled out the board feet calculator then choose a wood below to see the estimated price.
+				</p>
+				<form>
+				  <input type="radio" id="walnutButt" name="woods" value="Walnut" checked> Walnut<br>
+				  <input type="radio" id="pineButt" name="woods" value="pine"> Pine<br>
+				  <input type="radio" id="ashButt" name="woods" value="whiteAsh"> White Ash<br>
+				  <input type="radio" id="oakButt" name="woods" value="whiteOak">White Oak<br>
+				  <input type="button" id="priceButton" class="submitButtons" name="priceButton" value="submit">
+				</form>
+				<h3 id="priceDisplay"></h3>
+			</div>
+		</article>
+		</div>
+		
+
+	</div>
+	<script src="woodScripts.js"></script>
+</body>
+</html>

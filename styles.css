@@ -1,0 +1,74 @@
+/*text decoration for nav */
+.navLinks {
+	text-decoration: none;
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+	float: left;
+	color: #000;
+}
+/* set font size for site */
+body {
+	margin: auto;
+	font-size: large;
+}
+/* make header full width of page, set to overflow for logo */
+header{
+	width: 100%;
+	background-color: #F5F5F5;
+	height: auto;
+	margin: auto;
+	display: inline-block;
+}
+.halfColumn {
+	width: 45%;
+	float: left;
+
+}
+h2 {
+	margin: 0;
+}
+#title {
+	
+	margin: 15% 0 0 10%;
+	font-size: 2em;
+	color: #805500;
+}
+/* float nav left, allow logo to be responsive*/
+#treesLogo {
+	display: block;
+	float: right;
+	max-width: 100%;
+}
+nav {
+	width: 100%;
+	border-top: solid 2px #000;
+	border-bottom: solid 2px #000;
+	clear: both;
+}
+#navList {
+	list-style-type: none;
+	margin: 0;
+	margin: auto auto auto 10%;
+	padding: 0;
+	overflow: hidden;
+}
+/* create a background pattern using a div*/
+#outerWrapper {
+	background-image: url("assets/dark_wood.png");
+	height: auto;
+
+}
+/* div containing all content 80% of outerWrapper div*/
+#innerWrapper {
+	background-color: #F5F5F5;
+	margin: 0 10%;
+	height: auto;
+	min-height: 1000px;
+}
+article {
+	margin: 0 5%;
+}
+.submitButtons {
+	margin: 5px 0;
+}
